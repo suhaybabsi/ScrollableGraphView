@@ -81,9 +81,9 @@ open class ReferenceLines {
     }
 }
 open class ReferenceLine {
-    let position: Double
-    let label: String?
-    init(position: Double, label: String? = nil) {
+    public let position: Double
+    public let label: String?
+    public init(position: Double, label: String? = nil) {
         self.position = position
         self.label = label
     }
