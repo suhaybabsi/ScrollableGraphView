@@ -288,16 +288,15 @@
 					2918399D1C72E6A400753A45 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 5AGVYV3GTD;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
 			buildConfigurationList = 291839991C72E6A400753A45 /* Build configuration list for PBXProject "GraphView" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -514,7 +513,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = it.gzaccaroni.GraphViewCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -531,7 +530,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = it.gzaccaroni.GraphViewCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
