@@ -859,11 +859,9 @@ import UIKit
                 label.isHidden = !dataSource.plotLabel(shouldShowPlotLabel: plot, atIndex: point)
                 label.textColor = plot.labelColor
                 label.font = plot.labelFont
-
                 label.sizeToFit()
 
-                let labelVerticalOffset = dataSource.plotLabelVerticalOffset(forPlot: plot, atIndex: index)
-                
+                let labelVerticalOffset = dataSource.plotLabelVerticalOffset(forPlot: plot, atIndex: point)
                 let position = calculatePosition(atIndex: point, value: dataSource.value(forPlot: plot, atIndex: point))
                 label.frame = CGRect(origin: CGPoint(x: position.x - label.frame.width / 2, y: position.y - label.frame.height + labelVerticalOffset), size: label.frame.size)
 
