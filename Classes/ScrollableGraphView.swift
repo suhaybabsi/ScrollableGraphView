@@ -862,8 +862,10 @@ import UIKit
 
                 label.sizeToFit()
 
+                let labelVerticalOffset = dataSource.plotLabelVerticalOffset(forPlot: plot, atIndex: index)
+                
                 let position = calculatePosition(atIndex: point, value: dataSource.value(forPlot: plot, atIndex: point))
-                label.frame = CGRect(origin: CGPoint(x: position.x - label.frame.width / 2, y: position.y - label.frame.height + plot.labelVerticalOffset), size: label.frame.size)
+                label.frame = CGRect(origin: CGPoint(x: position.x - label.frame.width / 2, y: position.y - label.frame.height + labelVerticalOffset), size: label.frame.size)
 
                 _ = labelsView.subviews.filter { $0.frame.origin == label.frame.origin }.map { $0.removeFromSuperview() }
 

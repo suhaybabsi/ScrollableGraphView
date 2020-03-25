@@ -7,9 +7,11 @@ public protocol ScrollableGraphViewDataSource : class {
     func numberOfPoints() -> Int // This now forces the same number of points in each plot.
     func plotLabel(shouldShowPlotLabel plot: Plot, atIndex pointIndex: Int) -> Bool
     func plotLabel(forPlot plot: Plot, atIndex pointIndex: Int) -> String?
+    func plotLabelVerticalOffset(forPlot plot: Plot, atIndex pointIndex: Int) -> CGFloat
 }
 
 extension ScrollableGraphViewDataSource {
     func plotLabel(shouldShowPlotLabel plot: Plot, atIndex pointIndex: Int) -> Bool { return false }
     func plotLabel(forPlot plot: Plot, atIndex pointIndex: Int) -> String? { return nil }
+    func plotLabelVerticalOffset(forPlot plot: Plot, atIndex pointIndex: Int) -> CGFloat { return 0 }
 }

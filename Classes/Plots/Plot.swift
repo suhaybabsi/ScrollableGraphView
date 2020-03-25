@@ -34,8 +34,6 @@ open class Plot {
     open var labelFont = UIFont.systemFont(ofSize: 8)
     /// The colour of the value label font.
     open var labelColor: UIColor = UIColor.black
-    /// How far to offset the vertical position of the label.
-    open var labelVerticalOffset: CGFloat = 0
 
     // Private Animation State
     // #######################
