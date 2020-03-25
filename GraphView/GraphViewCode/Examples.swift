@@ -35,7 +35,11 @@ class Examples : ScrollableGraphViewDataSource {
     // off many graphs with different plots, we are using one big switch
     // statement.
     func value(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
-        
+        return dataValue(forPlot: plot, atIndex: pointIndex)
+    }
+    
+    func dataValue(forPlot plot: Plot, atIndex pointIndex: Int) -> Double {
+    
         switch(plot.identifier) {
             
         // Data for the graphs with a single plot
